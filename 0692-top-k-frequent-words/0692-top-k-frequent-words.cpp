@@ -6,9 +6,6 @@ public:
         for(int i=0;i<words.size();i++){
             mp[words[i]]++;
         }
-        for(auto x:mp){
-            cout<<x.first<<" "<<x.second<<endl;
-        }
         map<int,multiset<string>,greater<int>> mp2;
         for(auto x:mp){
             mp2[x.second].insert(x.first);
